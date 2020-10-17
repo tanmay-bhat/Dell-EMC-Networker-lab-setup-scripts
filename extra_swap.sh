@@ -20,7 +20,7 @@ swapon /mnt/swapfile
 
 #enable swap at start up
 echo "enabling swap at start up..........\n"
-/mnt/swapfile swap swap defaults 0 0
+ echo "/mnt/swapfile swap swap defaults 0 0" >> /etc/fstab
 
 echo "changing swappiness to 65 (default is 60)..................\n"
 echo "vm.swappiness=65" >>/etc/sysctl.conf
