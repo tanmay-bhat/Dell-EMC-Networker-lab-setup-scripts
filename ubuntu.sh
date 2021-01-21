@@ -16,7 +16,7 @@ else
         exit 1
 fi
 
-for i in gcc make linux-headers-$(uname -r) liblzo2-dev mt-st mtx perl; do
+for i in gcc make linux-headers-$(uname -r) lzop liblzo2-dev liblzo2-2 zlib1g-dev sg3-utils lsscsi  mt-st mtx perl; do
 	apt install -y $i
 done
 		
