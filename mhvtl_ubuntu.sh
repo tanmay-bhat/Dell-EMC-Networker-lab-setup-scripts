@@ -16,8 +16,9 @@ else
         exit 1
 fi
 
-
-apt install -y gcc gcc-c++ kernel-devel zlib-devel mt-st mtx lzo-devel perl >>$log
+for i in gcc gcc-c++ kernel-devel zlib-devel mt-st mtx lzo-devel perl; do
+	apt install -y $i
+done
 		
 
 #1 crating user: mhvtl and group:mhvtl
