@@ -2,6 +2,21 @@
 
 log=log_file.txt
 
+
+is_root()
+{
+        [[ $(id -u) -eq 0 ]];
+}
+
+if is_root; then
+        echo "yep, you are the Demi-God, go ahed please !"
+        exit 0
+else
+        echo "WARNING ! moving with  weakness!!"
+        exit 1
+fi
+
+
 apt install -y gcc gcc-c++ kernel-devel zlib-devel mt-st mtx lzo-devel perl >>$log
 		
 
