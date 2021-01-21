@@ -20,7 +20,7 @@ chown -Rf vtl:vtl /etc/mhvtl
 cd
 mkdir src
 cd src
-wget --no-check-certificate '<fill here with downloadlink>' -O mhvtl.tar
+wget --no-check-certificate 'https://drive.google.com/file/d/1kxlwcH9ldZZFC4_2c3AkVagVKYSoVFUe/view?usp=sharing' -O mhvtl.tar
 
 tar -xf mhvtl.tar
 
