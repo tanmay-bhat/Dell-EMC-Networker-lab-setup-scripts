@@ -1,12 +1,14 @@
 #!/bin/bash
 
-apt install -y gcc gcc-c++ kernel-devel zlib-devel mt-st mtx lzo-devel perl
+log=log_file.txt
+
+apt install -y gcc gcc-c++ kernel-devel zlib-devel mt-st mtx lzo-devel perl >>$log
 		
 
 #1 crating user: mhvtl and group:mhvtl
 
-groupadd -r vtl
-useradd -r -c "VTL Account" -d /opt/mhvtl -g vtl vtl
+groupadd -r vtl >>$log
+useradd -r -c "VTL Account" -d /opt/mhvtl -g vtl vtl >>$log
 
 #2 creating reruired directories
 
