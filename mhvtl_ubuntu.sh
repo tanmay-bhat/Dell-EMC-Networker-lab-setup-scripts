@@ -9,8 +9,8 @@ is_root()
 }
 
 if is_root; then
-        echo "yep, you are the Demi-God, go ahed please !"
-        exit 0
+        echo "yep, you are the Demi-God, go ahead please !"
+        
 else
         echo "WARNING ! moving with  weakness!!"
         exit 1
